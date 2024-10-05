@@ -1,8 +1,16 @@
+using WhisperingPages.Api.Common.Configuration;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services
+    .AddMediatR()
+    .AddDb(builder.Configuration)
+    .AddIdentityServices(builder.Configuration);
+
 
 var app = builder.Build();
 
