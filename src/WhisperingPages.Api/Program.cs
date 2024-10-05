@@ -7,7 +7,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services
-    .AddMediatR()
+    .AddDependencies()
     .AddDb(builder.Configuration)
     .AddIdentityServices(builder.Configuration);
 

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using WhisperingPages.Api.Features.Users;
+using WhisperingPages.Api.Features.Users.Entities;
 
 namespace WhisperingPages.Api.Infrastructure.Persistence;
 
